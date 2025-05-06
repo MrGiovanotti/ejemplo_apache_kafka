@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "beab219b-c585-4966-99d9-fd2be6900f2b",
+		"name": "ejemplo_apache_kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6608541"
+	},
+	"item": [
+		{
+			"name": "save-customer Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Bruce Willis\",\n    \"email\": \"bruce.willis@nashira.com.ec\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
